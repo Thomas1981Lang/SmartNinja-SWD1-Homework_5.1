@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Hairdresser Hans</title>
+</head>
+<body>
+
+<!--                        NAVBAR START                        -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hairdresser Hans</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler collapsed" data-target="#navbarSupportedContent" data-toggle="collapse"
+                type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Our services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#appointment">Make an appointment</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-target="#carousel_img_1" data-toggle="modal" href="#about">About us</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="search">
+            </form>
+        </div>
+    </div>
+</nav>
+<!--                        NAVBAR END                        -->
+
+
+
+<!--                        CAROUSEL START                        -->
+<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+    <div class="container-fluid">
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+            <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+            <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="hairdresser image 1" class="d-block w-100"
+                     src="https://via.placeholder.com/1140x400?text=Hairdresser+Image+1" data-toggle="modal" data-target="#carousel_img_1">
+            </div>
+
+            <div class="carousel-item">
+                <img alt="hairdresser image 2" class="d-block w-100"
+                     src="https://via.placeholder.com/1140x400?text=Hairdresser+Image+2" data-toggle="modal" data-target="#carousel_img_1">
+            </div>
+
+            <div class="carousel-item">
+                <img alt="hairdresser image 2" class="d-block w-100"
+                     src="https://via.placeholder.com/1140x400?text=Hairdresser+Image+3" data-toggle="modal" data-target="#carousel_img_1">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<!--                        CAROUSEL END                        -->
+
+<br>
+
+<!--                        SERVICES START                        -->
+<div class="container-fluid mt-5" id="services">
+    <h2 class="text-center mb-4">Our services</h2>
+
+    <div class="row">
+
+        <div class="col-md-4" data-toggle="modal" data-target="#carousel_img_1">
+            <div class="card">
+                <img alt="Styling Alt"
+                     class="card-img-top"
+                     src="https://via.placeholder.com/350x200?text=Styling">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Styling</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" data-toggle="modal" data-target="#carousel_img_1">
+            <div class="card">
+                <img alt="Coloring Alt"
+                     class="card-img-top"
+                     src="https://via.placeholder.com/350x200?text=Coloring">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Coloring</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" data-toggle="modal" data-target="#carousel_img_1">
+            <div class="card">
+                <img alt="Haircuts Alt"
+                     class="card-img-top"
+                     src="https://via.placeholder.com/350x200?text=Haircuts">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Haircuts</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                        SERVICES END                        -->
+
+
+<!--                        APPOINTMENT START                        -->
+<div class="container mt-5" id="appointment">
+    <h2 class="text-center  mb-4">Make an appointment</h2>
+
+    <div class="row">
+        <div class="col-md-4 offset-md-1 form-group d-flex flex-column">
+            <input class="form-control" placeholder="First and last name" type="text">
+
+            <input class="form-control mt-2" placeholder="Phone number" type="text">
+
+            <input class="form-control mt-2" placeholder="Date" type="text">
+
+            <textarea class="form-control mt-2" placeholder="Other info" rows="5"></textarea>
+
+            <div><input class="mt-3" type="checkbox"> I agree that Hans is the best friseur</div>
+
+            <br>
+
+            <button class="btn btn-success center-block">Send</button>
+        </div>
+
+        <div class="col-md-4 offset-md-1">
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Working hours</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+
+                <tr>
+                    <td>Tuesday</td>
+                    <td>10:00 - 18:00</td>
+                </tr>
+
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+
+                <tr>
+                    <td>Thursday</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+
+                <tr>
+                    <td>Friday</td>
+                    <td>12:00 - 20:00</td>
+                </tr>
+
+                <tr>
+                    <td>Saturday</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+
+                <tr>
+                    <td>Sunday</td>
+                    <td>8:00 - 12:00</td>
+                </tr>
+                </tbody>
+            </table>
+            <p>* We don't work on holidays.</p>
+        </div>
+    </div>
+</div>
+<!--                        APPOINTMENT END                        -->
+
+
+<!--                        FAQ START                        -->
+<div class="container mt-5" id="faq">
+    <h2 class="text-center">FAQ (Frequently Asked Questions)</h2>
+
+    <div class="accordion mt-4" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne" aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne"
+                 data-toggle="collapse">
+                <h3 class="mb-0">
+                        Do you have gift certificates?
+                </h3>
+            </div>
+
+            <div aria-labelledby="headingOne" class="collapse show" data-parent="#accordionExample" id="collapseOne">
+                <div class="card-body">
+                    I think my strongest asset maybe by far is my temperament. I have a placeholding temperament. I don't think anybody knows it was Russia that wrote Lorem Ipsum, but I don't know, maybe it was. It could be Russia, but it could also be China. It could also be lots of other people. It also could be some wordsmith sitting on their bed that weights 400 pounds. Ok?
+
+                    I was going to say something extremely rough to Lorem Ipsum, to its family, and I said to myself, "I can't do it. I just can't do it. It's inappropriate. It's not nice."
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header collapsed" id="headingTwo" aria-controls="collapseTwo" aria-expanded="false" data-target="#collapseTwo" data-toggle="collapse" >
+                <h3 class="mb-0">
+                        Can I bring my pet along?
+                </h3>
+            </div>
+            <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionExample" id="collapseTwo">
+                <div class="card-body">
+                    Some people have an ability to write placeholder text... It's an art you're basically born with. You either have it or you don't. If Trump Ipsum weren’t my own words, perhaps I’d be dating it.
+
+                    We have so many things that we have to do better... and certainly ipsum is one of them. We have so many things that we have to do better... and certainly ipsum is one of them. You know, it really doesn’t matter what you write as long as you’ve got a young, and beautiful, piece of text. Lorem Ipsum is FAKE TEXT!
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header collapsed" id="headingThree" aria-controls="collapseThree" aria-expanded="false" data-target="#collapseThree" data-toggle="collapse" >
+                <h3 class="mb-0">
+                        What awards have you received so far?
+                </h3>
+            </div>
+            <div aria-labelledby="headingThree" class="collapse" data-parent="#accordionExample" id="collapseThree">
+                <div class="card-body">
+                    All of the words in Lorem Ipsum have flirted with me - consciously or unconsciously. That's to be expected. Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina. I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                        FAQ END                        -->
+
+<hr class="mt-5">
+
+<!--                        FOOTER START                        -->
+<footer class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-1">
+            <h3>Contact</h3>
+
+            <p class="mb-1">Friseur Hans GmbH</p>
+            <p class="mb-1">Tax number: 324324234</p>
+            <p class="mb-1">Friseurgasse 5, 1020 Wien</p>
+            <p class="mb-1">Phone: 0668/345435346</p>
+            <p class="mb-1">Email: friseur.hans@f-hans.com</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <img alt="Friseur Hans Logo" class="img-fluid"
+                 src="https://via.placeholder.com/200x200?text=Coloring"
+                 width="200px">
+        </div>
+
+        <div class="col-md-3">
+            <h3>Navigation</h3>
+
+            <ul>
+                <li class="mb-1"><a href="#services">Our services</a></li>
+                <li class="mb-1"><a href="#appointment">Make an appointment</a></li>
+                <li class="mb-1"><a href="#faq">FAQ</a></li>
+                <li class="mb-1"><a data-target="#aboutModal" data-toggle="modal" href="#about">About us</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--                        FOOTER END                        -->
+
+
+<!--                        MODAL START                        -->
+<div class="modal fade" id="carousel_img_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">About Us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda delectus, deserunt enim excepturi iste minus nam quidem? A assumenda eligendi maiores minus provident, quos sint? Ad enim saepe similique veniam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci asperiores at atque cumque debitis eaque fuga impedit inventore laborum laudantium nemo nisi perferendis perspiciatis quisquam repellendus reprehenderit, sequi vero!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus corporis eligendi libero natus odio? Consectetur dignissimos illum maxime placeat quo ratione rerum tempora? Ea ipsa ipsam iusto quo ut voluptas?</p>
+                <img src="https://via.placeholder.com/350x200" class="rounded mx-auto d-block" alt="Responsive image">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                        MODAL END                        -->
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
